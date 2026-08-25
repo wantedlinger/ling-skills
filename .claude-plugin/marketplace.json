@@ -47,6 +47,16 @@
       "author": {
         "name": "Jarir Mallah"
       }
+    },
+    {
+      "name": "seo-audit",
+      "displayName": "SEO audit",
+      "source": "./plugins/seo-audit",
+      "description": "Full SEO audit of any URL: technical, on-page, content quality, schema, and dual AI Readiness + AI Visibility scores, delivered as a print-ready PDF report artifact.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Weslee Trout"
+      }
     }
   ]
 }

@@ -1,0 +1,19 @@
+{
+  "name": "seo-audit",
+  "displayName": "SEO audit",
+  "description": "Full SEO audit of any URL: technical, on-page, content quality (E-E-A-T), schema markup, and dual AI Readiness + AI Visibility scores. Outputs a self-contained, print-ready HTML report artifact the user can save as a PDF. No local files, no external tools required beyond web fetch.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Weslee Trout"
+  },
+  "keywords": [
+    "seo",
+    "audit",
+    "technical-seo",
+    "schema",
+    "ai-visibility",
+    "geo",
+    "e-e-a-t",
+    "report"
+  ]
+}
