@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Word &amp; Graphic — Style Gallery</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, "Segoe UI", Roboto, sans-serif; margin: 0;
+         background: #fafafa; color: #1a1a1a; }
+  header { position: sticky; top: 0; background: #111; color: #fff; padding: 14px 22px;
+           z-index: 5; box-shadow: 0 2px 8px rgba(0,0,0,.25); }
+  header h1 { margin: 0; font-size: 17px; font-weight: 650; }
+  header p { margin: 4px 0 0; font-size: 12.5px; opacity: .75; }
+  main { padding: 8px 22px 60px; }
+  section { margin-top: 26px; }
+  h2 { font-size: 15px; text-transform: uppercase; letter-spacing: .06em;
+        color: #555; border-bottom: 2px solid #e3e3e3; padding-bottom: 6px; }
+  h2 .count { color: #aaa; font-weight: 400; }
+  .grid { display: grid; gap: 16px; margin-top: 14px;
+           grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+  .tile { background: #fff; border: 1px solid #e6e6e6; border-radius: 12px;
+           overflow: hidden; display: flex; flex-direction: column;
+           box-shadow: 0 1px 3px rgba(0,0,0,.06); transition: transform .12s, box-shadow .12s; }
+  .tile:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,.12); }
+  .thumbs { position: relative; background:
+             repeating-conic-gradient(#eee 0 25%, #fff 0 50%) 0 0 / 20px 20px;
+             min-height: 180px; display: flex; align-items: center; justify-content: center;
+             outline: none; }
+  .carousel:focus-visible { box-shadow: inset 0 0 0 3px #4c8dff; }
+  .thumbs img { display: none; width: 100%; height: 180px; object-fit: contain; }
+  .thumbs img.on { display: block; }
+  .nav { position: absolute; top: 50%; transform: translateY(-50%); width: 30px; height: 44px;
+          border: none; background: rgba(0,0,0,.42); color: #fff; font-size: 24px; line-height: 1;
+          cursor: pointer; opacity: 0; transition: opacity .12s, background .12s; z-index: 2; }
+  .nav:hover { background: rgba(0,0,0,.68); }
+  .nav.prev { left: 0; border-radius: 0 6px 6px 0; }
+  .nav.next { right: 0; border-radius: 6px 0 0 6px; }
+  .tile:hover .nav, .carousel:focus-within .nav, .carousel:focus .nav { opacity: 1; }
+  .counter { position: absolute; bottom: 6px; right: 8px; z-index: 2;
+              background: rgba(0,0,0,.55); color: #fff; font-size: 11px; font-weight: 600;
+              padding: 2px 7px; border-radius: 10px; }
+  .noimg { color: #bbb; font-size: 12px; padding: 40px; }
+  .meta { padding: 10px 13px 14px; }
+  .num { font-size: 26px; font-weight: 800; line-height: 1; }
+  .tag { font-size: 11px; font-weight: 600; vertical-align: middle; margin-left: 6px;
+          background: #ffe9b0; color: #7a5b00; padding: 2px 7px; border-radius: 10px; }
+  .brief { font-size: 12.5px; line-height: 1.45; color: #444; margin: 8px 0 0; }
+  .empty { color: #999; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Word &amp; Graphic — Style Gallery</h1>
+  <p>Pick by picture, then type the <b>number</b> into the skill. Two independent choices: a Text Style and an Illustration Style.</p>
+</header>
+<main>
+
+    <section>
+      <h2>Text Style <span class="count">(1)</span></h2>
+      <div class="grid">
+        <article class="tile">
+          <div class='thumbs carousel' data-n='1' data-i='0' tabindex='0'><img src='Style/Text%20Style/Style%201%20Ling%20Orange%20Outline/Ling%20Text%20style.png' loading='lazy' alt='Style 1' class='on'></div>
+          <div class="meta">
+            <div class="num">1 <span class='tag'>Ling Orange Outline</span></div>
+            <p class="brief">Ling house social-title lettering: a bold HOLLOW OUTLINE word mark in Ling brand orange, set as a
+die-cut sticker. Derived by measurement from the reference (2026-08-21).
+
+LETTERFORMS: a heavy GEOMETRIC ROUNDED SANS-SERIF — circular bowls, near-constant stroke weight,
+fully rounded stroke ends and rounded corners, no serifs, no contrast, no italic slant, no swashes
+(Poppins / Century Gothic / Futura Round ExtraBold territory). The `a` is SINGLE-STOREY (a plain
+circle plus a straight stem), the `o`/`c`/`e` are true circles, ascenders are tall and straight.
+Set in Title Case with lowercase bodies, tightly kerned so adjacent letters almost touch or barely
+overlap, on a level horizontal baseline. Two or three short lines stacked centred, each line a
+similar optical width. Everything upright and level — no arcs, no waves, no rotation.
+
+FILL AND STROKE — this is the defining feature: the letters are OUTLINED, NOT SOLID. Each glyph is
+drawn as a thick, uniform-width OUTLINE in solid Ling orange #FF9900, with the counter/interior of
+every letter left EMPTY (plain white, the sticker body showing through). The outline weight is heavy
+— roughly a fifth of the stroke width of the underlying letterform — and identical on every letter.
+No gradient, no texture, no bevel, no gloss, no inner shadow.
+
+ECHO SHADOW: behind the outlined word sits ONE offset copy of the same word, this time SOLID-FILLED
+in flat pale peach #FFD8A4, shifted a small distance DOWN and slightly LEFT so it peeks out under
+the letters. It is a flat solid colour, hard-edged, no blur, no gradient, no transparency ramp, and
+there is only one of it — not a repeating extrusion, not a 3D block side.
+
+STICKER BODY: the whole lockup sits on a thick, smooth WHITE die-cut sticker outline that hugs the
+outer contour of the lettering as one continuous rounded shape, with soft rounded corners and no
+inner gaps between letters.
+
+ACCENTS: a small number (2-3) of solid #FF9900 four-point sparkle stars — pinched concave points,
+one large plus one tiny — tucked at the outer corners of the lockup, outside the letters, never
+overlapping the type. Nothing else decorates the mark.
+
+PALETTE: exactly three colours — Ling orange #FF9900 (all outlines and sparkles), pale peach
+#FFD8A4 (the echo copy only), white #FFFFFF (letter interiors and the sticker body). No other hue,
+no black, no grey.
+
+OVERALL: bright, friendly, punchy, app-brand clean; instantly readable at thumbnail size over busy
+video footage.
+
+NOT solid-filled letters, NOT a brush or marker or handwritten face, NOT a condensed or slab or
+serif face, NOT a neon glow, NOT a black keyline, NOT a multi-layer 3D extrusion, NOT distressed or
+textured — keep the flat hollow orange outline, the single flat peach echo, and the white die-cut
+sticker edge.</p>
+          </div>
+        </article></div>
+    </section>
+    <section>
+      <h2>Illustration Style <span class="count">(2)</span></h2>
+      <div class="grid">
+        <article class="tile">
+          <div class='thumbs carousel' data-n='1' data-i='0' tabindex='0'><img src='Style/Illustration%20Style/Style%201%20Ling%20Mascot/Ling%20sample%20test.png' loading='lazy' alt='Style 1' class='on'></div>
+          <div class="meta">
+            <div class="num">1 <span class='tag'>Ling Mascot</span></div>
+            <p class="brief">Flat 2D vector mascot-icon style (Ling app brand sheet).
+
+CONSTRUCTION: every subject is built from a few simple, chunky, geometric shapes with fully
+rounded corners and rounded stroke terminals — no sharp corners anywhere. Shapes are SOLID
+FLAT FILLS with no black keyline around them; where a line IS used it is a thick, uniform,
+rounded-cap stroke of the object&#x27;s own colour (never a thin hairline, never a black outline).
+Absolutely flat colour: no gradients, no shading, no highlights, no textures, no drop shadows,
+no perspective — a straight-on or gently three-quarter, sticker-flat presentation.
+
+PALETTE: strictly limited, three colours max per object plus a cream/white for interior shapes.
+Brand orange #FF9900 and yellow #FFCC00 are the accent colours; dark near-black #141B1E and
+slate #3D505C are the dark values; secondary props use a small family of flat blues (pale
+#BBD9F2, mid #4A90D9, deep #2C6FB5) and, for nature, flat green. Warm, bright, friendly.
+
+CHARACTER TREATMENT (when a character is drawn): a soft cartoon monkey built from rounded
+lozenge shapes — medium warm-brown body (#A0703C-ish), a large cream/off-white (#FDF4E0) face
+oval and a matching cream belly patch with a small rust-brown x mark on it, and a chunky black
+rounded cap with a flat bright orange brim worn on the head.
+
+FACE — the face carries exactly three marks and nothing else: two tiny solid black round dot
+eyes, identical to each other in size and evenly spaced, drawn straight-on; and centred below
+them a small NOSE made of exactly TWO short rounded horizontal dashes in warm rust-brown,
+sitting side by side with a small gap between them. The character has NO MOUTH — no mouth
+line, no smile, no open mouth, no muzzle outline of any kind. Below the two nose dashes the
+cream face is left completely empty. Facial features are minimal — NO blush cheeks, NO pink
+cheeks, NO eyelashes, NO eyebrows, NO shading on the face. Expression is calm and friendly,
+never exaggerated; feeling is carried by the POSE, never by a facial expression.
+
+LIMBS — the arms, legs and tail are THIN, SLIM strokes of CONSTANT uniform width with softly
+rounded cap ends, like a smooth curved pen stroke. Each arm is only about ONE EIGHTH the width
+of the body, very slender next to the round body. Limbs are NOT thick, NOT chunky, NOT stubby,
+NOT tapering and NOT wedge-shaped, and never as wide as the head.
+
+OVERALL: clean, modern, app-icon simple, instantly readable at small size, cheerful and
+uncluttered, with generous empty space around the subject.</p>
+          </div>
+        </article>
+        <article class="tile">
+          <div class='thumbs carousel' data-n='4' data-i='0' tabindex='0'><img src='Style/Illustration%20Style/Style%202%20Ling%20Word%20Icon/01_solo_cluster_prop.png' loading='lazy' alt='Style 2' class='on'><img src='Style/Illustration%20Style/Style%202%20Ling%20Word%20Icon/02_scene_pair_emotion.png' loading='lazy' alt='Style 2' class=''><img src='Style/Illustration%20Style/Style%202%20Ling%20Word%20Icon/03_building_frame_symbol.png' loading='lazy' alt='Style 2' class=''><img src='Style/Illustration%20Style/Style%202%20Ling%20Word%20Icon/04_hand_comparison_solo.png' loading='lazy' alt='Style 2' class=''><button class='nav prev' aria-label='Previous'>&#8249;</button><button class='nav next' aria-label='Next'>&#8250;</button><div class='counter'><span class='cur'>1</span>/4</div></div>
+          <div class="meta">
+            <div class="num">2 <span class='tag'>Ling Word Icon</span></div>
+            <p class="brief">Flat 2D vector icon style (Ling &quot;Word Icon&quot; library, 256 icons, derived by measurement 2026-08-18).
+
+CONSTRUCTION: every subject is built from solid, flat, geometric shapes with generously rounded
+corners and rounded stroke terminals. Shapes are FLAT FILLS with NO black keyline and NO outline of
+any kind around them; form is separated by colour alone, or by a thick, uniform, round-capped stroke
+in a darker tint of the object&#x27;s own colour. Absolutely flat: no gradients, no shading ramps, no
+highlights, no texture, no bevels, no perspective and no isometric projection — everything is drawn
+straight-on and sticker-flat. Depth is faked ONLY by overlap and by a single soft shadow: a flat
+pale-grey (#C0D3DD) ellipse under a grounded object, or a flat grey offset shape behind a card. Line
+work, where it exists, is a thick rounded bar, never a hairline.
+
+PALETTE: strictly limited and reused. The spine is a ladder of ONE blue used for skies, props, water
+and UI alike — #E6F5FF, #CCEBFF, #99D8FF, #66C3FF, #33B2FF, #009DFF, #008EE5, #006EB2. Skin is a
+four-step ramp: #FFCB9D, #F5BE8E, #D5A77F, #C88257. Every dark value in the set — hair, pupils,
+outlines, ink — is the same slate near-black #3D505C; pure black is never used. Neutral greys are
+#F1F3F5, #C2CED6, #C0D3DD, #A3B6C2, #5C788A. Accent hues appear ONE AT A TIME per icon, never two
+competing: orange #FF9900, yellow #FFCC00, green #22C45D / #51E186, red #F37272 / #EF4444, purple
+#CC9FFF / #BA6BFF / #8135C4. Warm, bright, friendly, high-key; nothing muddy or desaturated except
+where the grey-foil rule below applies deliberately.
+
+CHARACTER TREATMENT: humans, not mascots. The head is a LARGE rounded-square (a superellipse with a
+very generous corner radius) — never a circle — and reads about one third of the figure&#x27;s height.
+Hair is a single solid mass sitting over the head like a cap, in slate #3D505C or a flat brown, and
+carries ONE lighter rounded lozenge as a highlight bar. Small rounded bumps at the sides are the ears,
+in skin colour. The neck is a plain skin rectangle. Torsos are rounded-rectangle blocks in one flat
+garment colour; arms and legs are thick round-capped strokes in the garment colour ending in a plain
+skin-coloured circle for the hand. Bodies are simplified and slightly chunky, never anatomically
+detailed.
+
+FACE — measured from the references, describe nothing beyond this list. Each eye is a WHITE rounded
+oval sclera containing a SMALL dark slate pupil (#3D505C); it is not a plain dot and not a glossy
+anime eye. Eyebrows are short horizontal rounded bars in the hair colour, detached and sitting well
+above the eyes. The nose is a single small rounded horizontal lozenge in a mid-tan (#C8955F-ish),
+centred, with no nostrils. Blush is two soft salmon ROUNDED BARS (not circles), one on each cheek
+below the eye. The mouth IS present and is usually an open smile: a dark maroon rounded shape with a
+white upper-teeth band across its top and a lighter pink tongue below; a closed mouth is a simple
+rounded dark bar. No eyelashes, no nostril dots, no facial shading, no chin or jaw lines.
+
+BACKGROUND TREATMENT: one of exactly three, never a mixture. (1) FREE-FLOATING — the art sits on
+transparency with only its grey ellipse shadow. (2) BACKDROP SHAPE — an organic pastel blob or a soft
+rounded rectangle sits behind the subject in a pale tint and bleeds past the artwork on two or three
+sides. (3) SOLID CARD — the art is cropped into a filled rounded rectangle whose corner radius is
+roughly a tenth of its width. Backdrops are always a single flat pale colour; they never carry
+detail, gradient or pattern.
+
+DEVICES: a small fixed vocabulary of decorations, used sparingly and at most two per icon. GREY FOIL
+— when one thing is being contrasted with another, the non-subject copy is redrawn in flat greys
+(#A3B6C2 / #C0D3DD) at FULL opacity; it is never a faded or semi-transparent version of the coloured
+one. SPARKLES — four-point stars in #FFCC00, in odd numbers at uneven sizes. BUBBLES — a rounded
+speech or thought bubble carrying a second miniature icon instead of words. MAP PIN — an oversized
+#009DFF or #EF4444 teardrop. MOTION — a dotted or dashed arc plus a separate solid arrowhead in
+#FFCC00 or #EF4444. CHIP — a small rounded-square badge floated beside the subject holding a
+secondary sign. STEAM — pale blue wavy strokes for heat, smell or freshness.
+
+OVERALL: clean, modern, app-icon simple, instantly readable at small size, cheerful and uncluttered,
+generous empty space around the subject, and consistent enough that any two icons in the set look
+like they were drawn on the same afternoon by the same hand.</p>
+          </div>
+        </article></div>
+    </section>
+</main>
+<script>
+(function () {
+  function show(car, idx) {
+    var imgs = car.querySelectorAll('img');
+    if (!imgs.length) return;
+    var n = imgs.length;
+    idx = ((idx % n) + n) % n;            // wrap around
+    imgs.forEach(function (im, i) { im.classList.toggle('on', i === idx); });
+    car.dataset.i = idx;
+    var cur = car.querySelector('.counter .cur');
+    if (cur) cur.textContent = idx + 1;
+  }
+  function step(car, d) { show(car, parseInt(car.dataset.i || '0', 10) + d); }
+
+  document.querySelectorAll('.carousel').forEach(function (car) {
+    var prev = car.querySelector('.nav.prev');
+    var next = car.querySelector('.nav.next');
+    if (prev) prev.addEventListener('click', function (e) { e.stopPropagation(); car.focus(); step(car, -1); });
+    if (next) next.addEventListener('click', function (e) { e.stopPropagation(); car.focus(); step(car, 1); });
+  });
+
+  // Arrow keys drive whichever carousel is hovered (preferred) or focused.
+  var hovered = null;
+  document.querySelectorAll('.tile').forEach(function (tile) {
+    var car = tile.querySelector('.carousel');
+    if (!car) return;
+    tile.addEventListener('mouseenter', function () { hovered = car; });
+    tile.addEventListener('mouseleave', function () { if (hovered === car) hovered = null; });
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return;
+    var target = hovered;
+    if (!target) {
+      var a = document.activeElement;
+      if (a && a.classList.contains('carousel')) target = a;
+    }
+    if (!target || (target.querySelectorAll('img').length < 2)) return;
+    e.preventDefault();
+    step(target, e.key === 'ArrowRight' ? 1 : -1);
+  });
+})();
+</script>
+</body>
+</html>

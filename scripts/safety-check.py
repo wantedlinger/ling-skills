@@ -4,7 +4,7 @@
 Usage: python3 scripts/safety-check.py <skill-folder-or-submission.zip> [...]
 
 Exit 0 = clean. Exit 2 = LEAK (secret, credential or internal id: stop).
-Exit 1 = GAP (missing SKILL.md or definition of done). `read` lines never fail
+Exit 1 = GAP (missing SKILL.md, definition of done, or an unclear name). `read` lines never fail
 the build; they mark passages a human must read before merging.
 Four categories, matching the AH course's safety review: secrets, personal/
 machine-specific paths, references escaping the skill folder (breaks on
@@ -236,6 +236,91 @@ BINARY_SUFFIXES = {".png", ".jpg", ".jpeg", ".gif", ".webp", ".ico", ".pdf", ".z
                    ".mp3", ".mp4", ".mov", ".wav", ".so", ".dylib", ".bin", ".sqlite"}
 
 
+
+# ---------------------------------------------------------------------------
+# Skill naming. A folder name is the first and often only thing a person reads
+# before deciding whether a skill is the one they want. "grilling" and
+# "creative-tools" cost every future reader a file open; "stress-test-plan"
+# costs nobody anything.
+# ---------------------------------------------------------------------------
+
+NAME_SHAPE = re.compile(r"^[a-z][a-z0-9]*(-[a-z0-9]+)*$")
+
+# Prefix roots, so one entry covers generate / generates / generator and
+# categorize / categorizer / categorization without listing every inflection.
+ACTION_ROOTS = (
+    "analy audit build categoriz check clean compar convert creat draft export "
+    "extract find fix format generat humaniz import list migrat plan prep publish "
+    "refresh render report research review run scan score setup sort start "
+    "summar sync test track translat triage updat valid verif write design"
+).split()
+
+# Words that fill space without narrowing meaning.
+VAGUE_WORDS = {
+    "tool", "tools", "util", "utils", "helper", "helpers", "stuff", "misc",
+    "magic", "smart", "auto", "general", "various", "assistant", "thing",
+    "things", "manager", "handler", "processor", "system", "engine",
+}
+
+# Names that predate this rule. Renaming a published skill breaks anyone who
+# has installed it, so these stay until someone chooses to migrate one.
+# Do not add to this list: it exists to stop the rule breaking the past, not
+# to let new skills opt out.
+GRANDFATHERED = {
+    "ling-design-system",
+    "user-feedback-categorizer",
+    "meeting-notes-sync",
+}
+
+
+def check_name(folder_name: str, declared: str | None):
+    """Return (blocking, advisory) findings for a skill's name."""
+    blocking, advisory = [], []
+
+    if declared and declared != folder_name:
+        blocking.append(
+            f"folder is '{folder_name}' but SKILL.md declares name '{declared}': "
+            f"they must match or the skill installs under a name nobody searched for"
+        )
+
+    if folder_name in GRANDFATHERED:
+        return blocking, advisory
+
+    if not NAME_SHAPE.match(folder_name):
+        blocking.append(
+            f"'{folder_name}' is not kebab-case: lowercase letters, digits and "
+            f"single hyphens only"
+        )
+        return blocking, advisory
+
+    words = folder_name.split("-")
+
+    if len(words) < 2:
+        blocking.append(
+            f"'{folder_name}' is one word: say what it acts on, e.g. "
+            f"'{folder_name}-report' or 'review-{folder_name}'"
+        )
+    elif len(words) > 5:
+        advisory.append(f"'{folder_name}' is {len(words)} words: a name, not a sentence")
+
+    if not any(w.startswith(root) for w in words for root in ACTION_ROOTS):
+        blocking.append(
+            f"'{folder_name}' contains no action word, so the name does not say "
+            f"what the skill does. Add one (audit, draft, generate, review, sync, "
+            f"summarize, ...) or rename around the action it performs"
+        )
+
+    for w in words:
+        if w in VAGUE_WORDS:
+            blocking.append(
+                f"'{folder_name}' contains '{w}', which narrows nothing. Name the "
+                f"thing it actually produces or changes"
+            )
+            break
+
+    return blocking, advisory
+
+
 def scan(folder: Path):
     blockers, quality, warnings = [], [], []
 
@@ -330,6 +415,18 @@ def scan(folder: Path):
         if not re.search(r"(?i)privilege level", text):
             warnings.append(("SKILL.md", 0,
                              "no privilege level declared (read-only / draft-only / can-send)"))
+
+        declared = None
+        m = re.search(r"^---\s*$(.*?)^---\s*$", text, re.S | re.M)
+        if m:
+            n = re.search(r"^name:\s*(\S+)\s*$", m.group(1), re.M)
+            if n:
+                declared = n.group(1).strip().strip("\"'")
+        name_blocking, name_advisory = check_name(folder.name, declared)
+        for msg in name_blocking:
+            quality.append(("name", 0, msg))
+        for msg in name_advisory:
+            warnings.append(("name", 0, msg))
 
     return blockers, quality, warnings
 

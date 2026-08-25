@@ -1,9 +1,9 @@
 ---
-name: start-brain
+name: setup-claude-memory
 description: Set up a plain Claude memory folder from scratch — a short interview, then it writes CLAUDE.md and a memory/ folder so Claude actually knows who you are and what you work on. Use whenever someone is starting a fresh Claude project folder and says "set me up", "start my brain", "set up my memory", "give Claude context about me", "scaffold a claude project", "I just made an empty folder, now what", or is following the memory/connectors/skills intro video. This is the LEAN starter — one file plus a memory folder, no PARA, no rules, no template repo. NOT for the full WorkOS workspace (setup-workos owns that) and NOT for gardening existing memory (consolidate-memory).
 ---
 
-# Start Brain
+# Setup Claude Memory
 
 Turn an empty folder into a working Claude memory in about two minutes. The output is deliberately small: one `CLAUDE.md`, one `memory/` folder, nothing else. Structure is earned later, not scaffolded up front.
 

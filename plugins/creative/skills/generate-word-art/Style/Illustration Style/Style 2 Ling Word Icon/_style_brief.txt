@@ -1,0 +1,57 @@
+Flat 2D vector icon style (Ling "Word Icon" library, 256 icons, derived by measurement 2026-08-18).
+
+CONSTRUCTION: every subject is built from solid, flat, geometric shapes with generously rounded
+corners and rounded stroke terminals. Shapes are FLAT FILLS with NO black keyline and NO outline of
+any kind around them; form is separated by colour alone, or by a thick, uniform, round-capped stroke
+in a darker tint of the object's own colour. Absolutely flat: no gradients, no shading ramps, no
+highlights, no texture, no bevels, no perspective and no isometric projection — everything is drawn
+straight-on and sticker-flat. Depth is faked ONLY by overlap and by a single soft shadow: a flat
+pale-grey (#C0D3DD) ellipse under a grounded object, or a flat grey offset shape behind a card. Line
+work, where it exists, is a thick rounded bar, never a hairline.
+
+PALETTE: strictly limited and reused. The spine is a ladder of ONE blue used for skies, props, water
+and UI alike — #E6F5FF, #CCEBFF, #99D8FF, #66C3FF, #33B2FF, #009DFF, #008EE5, #006EB2. Skin is a
+four-step ramp: #FFCB9D, #F5BE8E, #D5A77F, #C88257. Every dark value in the set — hair, pupils,
+outlines, ink — is the same slate near-black #3D505C; pure black is never used. Neutral greys are
+#F1F3F5, #C2CED6, #C0D3DD, #A3B6C2, #5C788A. Accent hues appear ONE AT A TIME per icon, never two
+competing: orange #FF9900, yellow #FFCC00, green #22C45D / #51E186, red #F37272 / #EF4444, purple
+#CC9FFF / #BA6BFF / #8135C4. Warm, bright, friendly, high-key; nothing muddy or desaturated except
+where the grey-foil rule below applies deliberately.
+
+CHARACTER TREATMENT: humans, not mascots. The head is a LARGE rounded-square (a superellipse with a
+very generous corner radius) — never a circle — and reads about one third of the figure's height.
+Hair is a single solid mass sitting over the head like a cap, in slate #3D505C or a flat brown, and
+carries ONE lighter rounded lozenge as a highlight bar. Small rounded bumps at the sides are the ears,
+in skin colour. The neck is a plain skin rectangle. Torsos are rounded-rectangle blocks in one flat
+garment colour; arms and legs are thick round-capped strokes in the garment colour ending in a plain
+skin-coloured circle for the hand. Bodies are simplified and slightly chunky, never anatomically
+detailed.
+
+FACE — measured from the references, describe nothing beyond this list. Each eye is a WHITE rounded
+oval sclera containing a SMALL dark slate pupil (#3D505C); it is not a plain dot and not a glossy
+anime eye. Eyebrows are short horizontal rounded bars in the hair colour, detached and sitting well
+above the eyes. The nose is a single small rounded horizontal lozenge in a mid-tan (#C8955F-ish),
+centred, with no nostrils. Blush is two soft salmon ROUNDED BARS (not circles), one on each cheek
+below the eye. The mouth IS present and is usually an open smile: a dark maroon rounded shape with a
+white upper-teeth band across its top and a lighter pink tongue below; a closed mouth is a simple
+rounded dark bar. No eyelashes, no nostril dots, no facial shading, no chin or jaw lines.
+
+BACKGROUND TREATMENT: one of exactly three, never a mixture. (1) FREE-FLOATING — the art sits on
+transparency with only its grey ellipse shadow. (2) BACKDROP SHAPE — an organic pastel blob or a soft
+rounded rectangle sits behind the subject in a pale tint and bleeds past the artwork on two or three
+sides. (3) SOLID CARD — the art is cropped into a filled rounded rectangle whose corner radius is
+roughly a tenth of its width. Backdrops are always a single flat pale colour; they never carry
+detail, gradient or pattern.
+
+DEVICES: a small fixed vocabulary of decorations, used sparingly and at most two per icon. GREY FOIL
+— when one thing is being contrasted with another, the non-subject copy is redrawn in flat greys
+(#A3B6C2 / #C0D3DD) at FULL opacity; it is never a faded or semi-transparent version of the coloured
+one. SPARKLES — four-point stars in #FFCC00, in odd numbers at uneven sizes. BUBBLES — a rounded
+speech or thought bubble carrying a second miniature icon instead of words. MAP PIN — an oversized
+#009DFF or #EF4444 teardrop. MOTION — a dotted or dashed arc plus a separate solid arrowhead in
+#FFCC00 or #EF4444. CHIP — a small rounded-square badge floated beside the subject holding a
+secondary sign. STEAM — pale blue wavy strokes for heat, smell or freshness.
+
+OVERALL: clean, modern, app-icon simple, instantly readable at small size, cheerful and uncluttered,
+generous empty space around the subject, and consistent enough that any two icons in the set look
+like they were drawn on the same afternoon by the same hand.

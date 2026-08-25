@@ -36,14 +36,15 @@ Later, to pick up everyone else's improvements:
 claude plugin marketplace update ling-skills
 ```
 
-Skills from a plugin are namespaced, so the one above runs as `/getting-started:start-brain`.
+Skills from a plugin are namespaced, so the one above runs as `/getting-started:setup-claude-memory`.
 
 ## What's in it
 
 | Plugin | Skill | Privilege | What it does |
 |---|---|---|---|
-| `getting-started` | `start-brain` | draft-only | Turns an empty folder into a working Claude memory. Five questions, then it writes your `CLAUDE.md` and seeds a `memory/` folder. Start here if you are new. |
+| `getting-started` | `setup-claude-memory` | draft-only | Turns an empty folder into a working Claude memory. Five questions, then it writes your `CLAUDE.md` and seeds a `memory/` folder. Start here if you are new. |
 | `feedback-tools` | `user-feedback-categorizer` | read-only | Turns a pile of reviews, survey answers or churn reasons into a ranked table of themes with owners and a top 3 to act on. |
+| `creative` | `generate-word-art` | can-send | Generates Ling-branded word art sticker PNGs: a word in the Ling title lettering, optionally with a mascot or Word-Icon graphic, on a transparent background. Needs an OpenAI API key; about $0.01 per image. |
 
 The library grows from the workshop, not from me pre-filling it.
 

@@ -1,0 +1,1 @@
+The Ling Word Icon library look — flat vector objects, people and scenes on a blue-ladder palette, no outlines, one accent hue per icon. Use for a normal vocabulary word. See _composition_recipes.md for ready-made --graphic framings.

@@ -7,7 +7,7 @@ recursing into subfolders, then groups artifacts into meeting sets and returns
 the ones not already recorded in the state file.
 
 Folders are discovered by name at run time rather than by hardcoded ID. The
-same IDs living in two files is how file-meet-recordings' routing drifts, and
+same IDs living in two files is how folder routing silently drifts, and
 a deleted-and-recreated folder changes its ID without telling anyone.
 
 Usage:

@@ -143,13 +143,11 @@ If the calendar read itself fails, **abort the whole run** rather than syncing u
 
 ### 3. Apply the private-topic guard
 
-**Preflight — this is a hard gate.** The guard's keyword list lives in [`references/private-topics.md`](references/private-topics.md), which ships with the sibling skill a recording-filing skill. Before processing anything:
+The guard's keyword list ships with this skill, at [`references/private-topics.md`](references/private-topics.md). Nothing else needs installing.
 
-If it's missing, **abort the entire run** and report that the private-topic guard is unavailable. Do not proceed with the guard disabled, do not substitute an improvised keyword list from memory, and do not skip to writing.
+**If that file is missing, abort the entire run** and report that the private-topic guard is unavailable. Do not proceed with the guard disabled, do not improvise a keyword list from memory, and do not skip ahead to writing. A guard that silently no-ops is worse than no skill at all — it writes a compensation discussion into a team-wide space while reporting success.
 
-A guard that silently no-ops is worse than no skill at all — it would write a comp discussion into a team-wide space while reporting success. The two skills are a pair; install both.
-
-Then run each meeting title through **rule 0**. A hit does **not** mean skip. It means: this meeting may only be written to a page in a **private** ClickUp space.
+Run each meeting title through the list. A hit does **not** mean skip. It means: this meeting may only be written to a page in a **private** ClickUp space.
 
 - Guard hit, matched page in a private space → proceed normally.
 - Guard hit, matched page in a team-wide space → **refuse the write**, flag loudly in the digest. Someone put a sensitive meeting's page somewhere broad. A human decides that, not this skill.

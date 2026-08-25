@@ -1,0 +1,41 @@
+Ling house social-title lettering: a bold HOLLOW OUTLINE word mark in Ling brand orange, set as a
+die-cut sticker. Derived by measurement from the reference (2026-08-21).
+
+LETTERFORMS: a heavy GEOMETRIC ROUNDED SANS-SERIF — circular bowls, near-constant stroke weight,
+fully rounded stroke ends and rounded corners, no serifs, no contrast, no italic slant, no swashes
+(Poppins / Century Gothic / Futura Round ExtraBold territory). The `a` is SINGLE-STOREY (a plain
+circle plus a straight stem), the `o`/`c`/`e` are true circles, ascenders are tall and straight.
+Set in Title Case with lowercase bodies, tightly kerned so adjacent letters almost touch or barely
+overlap, on a level horizontal baseline. Two or three short lines stacked centred, each line a
+similar optical width. Everything upright and level — no arcs, no waves, no rotation.
+
+FILL AND STROKE — this is the defining feature: the letters are OUTLINED, NOT SOLID. Each glyph is
+drawn as a thick, uniform-width OUTLINE in solid Ling orange #FF9900, with the counter/interior of
+every letter left EMPTY (plain white, the sticker body showing through). The outline weight is heavy
+— roughly a fifth of the stroke width of the underlying letterform — and identical on every letter.
+No gradient, no texture, no bevel, no gloss, no inner shadow.
+
+ECHO SHADOW: behind the outlined word sits ONE offset copy of the same word, this time SOLID-FILLED
+in flat pale peach #FFD8A4, shifted a small distance DOWN and slightly LEFT so it peeks out under
+the letters. It is a flat solid colour, hard-edged, no blur, no gradient, no transparency ramp, and
+there is only one of it — not a repeating extrusion, not a 3D block side.
+
+STICKER BODY: the whole lockup sits on a thick, smooth WHITE die-cut sticker outline that hugs the
+outer contour of the lettering as one continuous rounded shape, with soft rounded corners and no
+inner gaps between letters.
+
+ACCENTS: a small number (2-3) of solid #FF9900 four-point sparkle stars — pinched concave points,
+one large plus one tiny — tucked at the outer corners of the lockup, outside the letters, never
+overlapping the type. Nothing else decorates the mark.
+
+PALETTE: exactly three colours — Ling orange #FF9900 (all outlines and sparkles), pale peach
+#FFD8A4 (the echo copy only), white #FFFFFF (letter interiors and the sticker body). No other hue,
+no black, no grey.
+
+OVERALL: bright, friendly, punchy, app-brand clean; instantly readable at thumbnail size over busy
+video footage.
+
+NOT solid-filled letters, NOT a brush or marker or handwritten face, NOT a condensed or slab or
+serif face, NOT a neon glow, NOT a black keyline, NOT a multi-layer 3D extrusion, NOT distressed or
+textured — keep the flat hollow orange outline, the single flat peach echo, and the white die-cut
+sticker edge.

@@ -1,0 +1,35 @@
+Flat 2D vector mascot-icon style (Ling app brand sheet).
+
+CONSTRUCTION: every subject is built from a few simple, chunky, geometric shapes with fully
+rounded corners and rounded stroke terminals — no sharp corners anywhere. Shapes are SOLID
+FLAT FILLS with no black keyline around them; where a line IS used it is a thick, uniform,
+rounded-cap stroke of the object's own colour (never a thin hairline, never a black outline).
+Absolutely flat colour: no gradients, no shading, no highlights, no textures, no drop shadows,
+no perspective — a straight-on or gently three-quarter, sticker-flat presentation.
+
+PALETTE: strictly limited, three colours max per object plus a cream/white for interior shapes.
+Brand orange #FF9900 and yellow #FFCC00 are the accent colours; dark near-black #141B1E and
+slate #3D505C are the dark values; secondary props use a small family of flat blues (pale
+#BBD9F2, mid #4A90D9, deep #2C6FB5) and, for nature, flat green. Warm, bright, friendly.
+
+CHARACTER TREATMENT (when a character is drawn): a soft cartoon monkey built from rounded
+lozenge shapes — medium warm-brown body (#A0703C-ish), a large cream/off-white (#FDF4E0) face
+oval and a matching cream belly patch with a small rust-brown x mark on it, and a chunky black
+rounded cap with a flat bright orange brim worn on the head.
+
+FACE — the face carries exactly three marks and nothing else: two tiny solid black round dot
+eyes, identical to each other in size and evenly spaced, drawn straight-on; and centred below
+them a small NOSE made of exactly TWO short rounded horizontal dashes in warm rust-brown,
+sitting side by side with a small gap between them. The character has NO MOUTH — no mouth
+line, no smile, no open mouth, no muzzle outline of any kind. Below the two nose dashes the
+cream face is left completely empty. Facial features are minimal — NO blush cheeks, NO pink
+cheeks, NO eyelashes, NO eyebrows, NO shading on the face. Expression is calm and friendly,
+never exaggerated; feeling is carried by the POSE, never by a facial expression.
+
+LIMBS — the arms, legs and tail are THIN, SLIM strokes of CONSTANT uniform width with softly
+rounded cap ends, like a smooth curved pen stroke. Each arm is only about ONE EIGHTH the width
+of the body, very slender next to the round body. Limbs are NOT thick, NOT chunky, NOT stubby,
+NOT tapering and NOT wedge-shaped, and never as wide as the head.
+
+OVERALL: clean, modern, app-icon simple, instantly readable at small size, cheerful and
+uncluttered, with generous empty space around the subject.

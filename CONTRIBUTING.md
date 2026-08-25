@@ -22,6 +22,32 @@ it belongs here so someone else can fork it.
 6. **CI runs the safety check on your PR automatically.** A LEAK fails the build. You do not have to remember to run it, and neither does your reviewer. Run `./scripts/install-hooks.sh` once and it also runs before every local commit, which is better: a key caught pre-commit is deleted, a key caught in CI is already in your branch history and has to be rotated.
 7. **One reviewer approves**, then merge. Everyone who has added the marketplace gets it on their next `/plugin marketplace update`.
 
+## Naming a skill
+
+The folder name is the first thing anyone reads, and usually the only thing they read before deciding whether it is the skill they want. `grilling` costs every future reader a file open. `stress-test-plan` costs nobody anything.
+
+`safety-check.py` enforces this, so a bad name fails CI rather than review.
+
+**The rule:** `kebab-case`, two to five words, containing an action word, naming what it acts on.
+
+| Instead of | Write |
+|---|---|
+| `grilling` | `stress-test-plan` |
+| `creative-tools` | `generate-word-art` |
+| `feedback` | `categorize-user-feedback` |
+| `seo` | `audit-site-seo` |
+| `Sync_Meeting_Notes` | `sync-meeting-notes` |
+
+What fails:
+
+- **Not kebab-case.** Lowercase letters, digits, single hyphens.
+- **One word.** It names a topic, not a job. `research` could be six different skills.
+- **No action word.** Include one of audit, categorize, draft, generate, review, summarize, sync, and so on. Either end is fine: `sync-meeting-notes` and `meeting-notes-sync` both read clearly.
+- **Filler words.** `tools`, `utils`, `helper`, `manager`, `system`, `auto`, `smart`. They occupy space without narrowing meaning.
+- **Folder name not matching `name:` in SKILL.md.** The skill installs under the frontmatter name, so a mismatch means it appears under a name nobody searched for.
+
+Skills published before this rule are grandfathered in the checker. Renaming a live skill breaks anyone who installed it, so it is a deliberate migration, not a tidy-up. Do not add to that list.
+
 ## Portability checklist
 
 Plugins are copied to a local cache when installed, so **a skill cannot reference files outside its
